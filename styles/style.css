@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact-container, #project-cntr{
+    display: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+  }
+  
+  h4,
+  h5 {
+    font-size: 2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #2c2c2c;
+  }
+  
+  .main-head {
+    width: 95%;
+    margin: 0 0 0 auto;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    flex-direction: row;
+    min-height: 10vh;
+    width: 60%;
+    flex-wrap: wrap;
+  }
+  
+  nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex: 1 1 10rem;
+  }
+  
+  nav .logo h1 {
+    margin: 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex: 1 1 40rem;
+  }
+
+  nav ul li a{
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+  }
+
+  nav ul li a:hover{
+    background-color: #38a4d3;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+  }
+  
+  .intro {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .intro h2 {
+    font-size: 5rem;
+    padding-top: 2rem;
+    color: #38a4d3;
+    display: inline-block;
+  }
+  
+  .intro h3 {
+    font-size: 4rem;
+    padding: 2rem 0rem;
+  }
+  
+  .intro p {
+    padding-top: 2rem;
+    color: #2c2c2c;
+  }
+  
+  .splash {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .intro-hireme {
+    margin-top: 4rem;
+  }
+
+  .intro-hireme input{
+    border: none;
+    color: #fff;
+    background-color: #38a4d3;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  .active {
+    background: #2c2c2c;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+  }
+  
+  .intro-text,
+  .intro-images {
+    flex: 1 1 40rem;
+  }
+  
+  #plant-left {
+    animation: plant 1.5s ease infinite alternate;
+  }
+  
+  #plant-right {
+    animation: plant 1.5s ease infinite alternate 0.5s;
+  }
+  
+  #me {
+    animation: me 1s ease infinite alternate;
+    transform-origin: bottom;
+  }
+  
+  #clock-arrow {
+    animation: clock 1.5s infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom;
+  }
+  
+  @-webkit-keyframes me {
+    from {
+      transform: rotateZ(-5deg);
+    }
+    to {
+      -webkit-transform: rotateZ(5deg);
+              transform: rotateZ(5deg);
+    }
+  }
+  
+  @keyframes me {
+    from {
+      transform: rotateZ(-5deg);
+    }
+    to {
+      transform: rotateZ(5deg);
+    }
+  }
+  
+  @-webkit-keyframes plant {
+    from {
+      
+      transform: translateY(0%);
+    }
+    to {
+      
+      transform: translateY(-30%);
+    }
+  }
+  
+  @keyframes plant {
+    from {
+     
+      transform: translateY(0%);
+    }
+    to {
+      
+      transform: translateY(-30%);
+    }
+  }
+  
+  @-webkit-keyframes clock {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes clock {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  /* ------- Project section -------
+  ----------------------------------
+  =------------------------------ */
+
+  .project-container{
+    width: 70%;
+    height: 700px;
+    margin: auto;
+}
+
+.project-container h2{
+    text-align: center;
+    padding: 25px 0;
+    color: #38a4d3;
+}
+
+.project-container ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.project-container ul li img{
+    width: 360px;
+    height: 200px;
+    box-shadow: 0 0 20px 0 #38a4d3;
+}
+
+.project-container ul li p{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.project-btn{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.project-btn input{
+    border: none;
+    width: 150px;
+    height: 35px;
+    background-color: #38a4d3;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+  /* ------ Contact section -------
+  ---------------------------------
+  ---------------------------------
+  ---------------------------------
+  ------------------------------ */
+
+.contact-intro{
+    text-align: center;
+}
+
+.contact-intro h2{
+    padding: 10px;
+    color: #38a4d3;;
+}
+
+.contact-intro p{
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-wrapper{
+    width: 95vw;
+    margin: 40px auto 0;
+}
+
+.contact-form{
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.text-caption{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0 5px 0;
+}
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+input{
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+textarea{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input:nth-of-type(3){
+    margin: 10px auto;
+    width: 200px;
+    border: none;
+    background-color: #38a4d3;;
+    color: #fff;
+}
+
+/* Contact section ended */
+
+  
+  footer {
+    background: #154353;
+    color: white;
+    min-height: 10vh;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  footer ul {
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  footer h4 {
+    flex: 1 1 40rem;
+  }
+  
+  @media screen and (max-width: 1332px) {
+    html {
+      font-size: 53%;
+    }
+    .splash {
+      display: none;
+    }
+    svg {
+      width: 80%;
+    }
+    nav {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 754px) {
+    html {
+      font-size: 45%;
+    }
+    svg {
+      height: 60%;
+    }
+    .main-head {
+      width: 100%;
+    }
+    nav .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex: 1 1 20rem;
+      margin-top: 2rem;
+    }
+    nav ul {
+      flex: 1 1 60rem;
+      margin: 2rem 0rem;
+    }
+    .intro-text {
+      margin-top: 5rem;
+      text-align: center;
+    }
+    .intro-images {
+      text-align: center;
+    }
+    .intro-hireme {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* media screen of contact form */
+
+  @media screen and (min-width: 656px) {
+    .contact-wrapper {
+      height: 90vh;
+    }
+  }
